@@ -17,7 +17,7 @@ def unique_kmers(x: str, k: int) -> list[str]:
     """
     Computer all unique k-mers of x.
     >>> unique_kmers('agtagtcg', 3)
-    ['agt', 'gta', 'tag','gtc', 'tcg']
+    ['gta', 'tcg', 'tag', 'agt', 'gtc']
 
     """
     return list(set(kmer(x,k)))
@@ -42,5 +42,3 @@ def count_kmers(x: str, k: int) -> dict[str, int]:
     return counts
 
 
-    
-    
