@@ -25,7 +25,7 @@ def unique_kmers(x: str, k: int) -> list[str]:
 def count_kmers(x: str, k: int) -> dict[str, int]:
     """
     Computer all k-mers of x and count how often they appear.
-    >>> unique_kmers('agtagtcg', 3)
+    >>> count_kmers('agtagtcg', 3)
     {'tag': 1, 'tcg': 1, 'agt': 2, 'gtc': 1, 'gta': 1}
 
     """
