@@ -9,15 +9,13 @@ def kmer(x: str, k: int) -> list[str]:
     ['agt', 'gta', 'tag', 'agt', 'gtc', 'tcg']
 
     """
-    kmer_ = [x[i:i+k] for i in range(0,len(x)-k+1)]
-    return kmer_
+    kmer = [x[i:i+k] for i in range(0,len(x)-k+1)]
+    return kmer
 
 
 def unique_kmers(x: str, k: int) -> list[str]:
     """
     Computer all unique k-mers of x.
-    >>> unique_kmers('agtagtcg', 3)
-    ['gta', 'tcg', 'tag', 'agt', 'gtc']
 
     """
     return list(set(kmer(x,k)))
