@@ -41,6 +41,6 @@ def count_kmers(x: str, k: int) -> dict[str, int]:
         counts[k] += 1
     return counts
 
-print(count_kmers('agtagtcg', 3))
+
     
     
